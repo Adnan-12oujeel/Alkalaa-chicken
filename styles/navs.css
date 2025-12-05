@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: fixed;
+    width: 100%;
+    transform: 0.9s;
+    z-index: 999;
+}
+
+
+header.scrolled{
+    background-color: #fff;
+    box-shadow: 0 0 0 1px orangered;
+}
+
+.header-logo.scrolled {
+    color: #000 !important;
+}
+
+
+
+.logo{
+    display: flex;
+    gap: 5px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+nav {
+    background-color: #d9d9d9;
+    padding: 10px;
+    border-radius: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 20px;
+    color: black;
+}
+
+nav ul li a:hover {
+    background-color: orangered;
+    color: #fff;
+}
+
+.nav-bar {
+    display: none;
+}
+
+.btn {
+    display: none;
+}
+
+.nav-bar{
+    display: none;
+}
+
+
+.top-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 45px;
+    height: 45px;
+    background: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    z-index: 999;
+}
+
+.top-btn:hover {
+    background: black;
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 760px){
+    header{
+        display: none;
+    }
+    .nav-bar{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        position: absolute;
+        background-color: #d9d9d9;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 360px;
+        gap: 60px;
+        border-radius: 20px;
+        box-shadow: 0 0 0 3px orangered;
+    }
+
+    .nav-bar .logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 300px;
+    }
+    .nav-bar .logo .logo-h{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .nav-bar nav{
+        background-color: #00000088;
+    }
+    .nav-bar nav ul{
+        background-color: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-bar nav ul li a{
+        color: #fff;
+    }
+
+    .nav-bar.show{
+        display: flex;
+    }
+
+    .top-btn{
+        display: flex;
+    }
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    
+}

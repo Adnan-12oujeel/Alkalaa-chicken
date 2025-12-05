@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروج القلعة </title>
+    <link rel="stylesheet" href="styles/navs.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/5cd3c2f996.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="chicken-images/food-logo.png" alt="">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="products.html">قائمة الطعام</a></li>
+                <li><a href="about.html">عن المحل</a></li>
+                <li><a href="products.html">اطلب الآن</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <h1>فروج </h1>
+            <h1 style="color: orangered;">القلعة</h1>
+        </div>
+    </header>
+
+    <div class="btn-view" id="btn">
+        <button class="top-btn">
+            <i class="fa-solid fa-ellipsis-v"></i>
+        </button>
+    </div>
+
+    <div class="nav-bar">
+        <div class="logo">
+            <div class="logo-h">
+                <h1 style="color: #fff;">فروج </h1>
+                <h1 style="color: orangered;">القلعة</h1>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="products.html">قائمة الطعام</a></li>
+                <li><a href="about.html">عن المحل</a></li>
+                <li><a href="#order-title">اطلب الآن</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="container-h">
+            <h1 style="color: #fff;">ألذ انواع </h1>
+            <h1 style="color: orangered;">الفروج</h1>
+            <h1 style="color: #fff;">المشوي </h1>
+        </div>
+        <span>جربوا طعم <b style="color: orangered;">الفروج</b> المشوي على الفحم بأيدي خبراء، مع خلطات التوابل
+            السرية الخاصة بنا</span>
+        <button class="order-btn-card" onclick="goToForm(products.html)">اطلب الآن</button>
+    </div>
+
+    <div class="cards">
+        <div class="cards-h">
+            <h1>قائمة الطعام</h1>
+        </div>
+        <!-- ----------  start card -------------- -->
+        <div class="card">
+            <div class="card-contain">
+                <div class="card">
+                    <img src="chicken-images/food-1.png" alt="" style="width: 100%;">
+                    <div class="card-h">
+                        <h3 class="meal-name">فروج مشوي كامل</h3>
+                        <h3 style="color: orangered;">20$</h3>
+                    </div>
+                    <div class="card-details">
+                        فروج مشوي كامل على الفحم مع خلطة التوابل السرية،
+                        يقدم مع البطاطا المشوية والسلطة.
+                    </div>
+                    <div class="hot-btns">
+                        <button class="hot-btn active" data-value="حار">حار</button>
+                        <button class="hot-btn" data-value="بارد">بارد</button>
+                    </div>
+                    <button class="order-btn-card">اطلب الآن</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------  start card -------------- -->
+        <div class="card">
+            <div class="card-contain">
+                <div class="card">
+                    <img src="chicken-images/food-1.png" alt="" style="width: 100%;">
+                    <div class="card-h">
+                        <h3 class="meal-name">فروج مشوي كامل</h3>
+                        <h3 style="color: orangered;">20$</h3>
+                    </div>
+                    <div class="card-details">
+                        فروج مشوي كامل على الفحم مع خلطة التوابل السرية،
+                        يقدم مع البطاطا المشوية والسلطة.
+                    </div>
+                    <div class="hot-btns">
+                        <button class="hot-btn active" data-value="حار">حار</button>
+                        <button class="hot-btn" data-value="بارد">بارد</button>
+                    </div>
+                    <button class="order-btn-card">اطلب الآن</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------  start card -------------- -->
+        <div class="card">
+            <div class="card-contain">
+                <div class="card">
+                    <img src="chicken-images/food-1.png" alt="" style="width: 100%;">
+                    <div class="card-h">
+                        <h3 class="meal-name">فروج مشوي كامل</h3>
+                        <h3 style="color: orangered;">20$</h3>
+                    </div>
+                    <div class="card-details">
+                        فروج مشوي كامل على الفحم مع خلطة التوابل السرية،
+                        يقدم مع البطاطا المشوية والسلطة.
+                    </div>
+                    <div class="hot-btns">
+                        <button class="hot-btn active" data-value="حار">حار</button>
+                        <button class="hot-btn" data-value="بارد">بارد</button>
+                    </div>
+                    <button class="order-btn-card">اطلب الآن</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------  start card -------------- -->
+        <div class="card">
+            <div class="card-contain">
+                <div class="card">
+                    <img src="chicken-images/food-1.png" alt="" style="width: 100%;">
+                    <div class="card-h">
+                        <h3 class="meal-name">فروج مشوي كامل</h3>
+                        <h3 style="color: orangered;">20$</h3>
+                    </div>
+                    <div class="card-details">
+                        فروج مشوي كامل على الفحم مع خلطة التوابل السرية،
+                        يقدم مع البطاطا المشوية والسلطة.
+                    </div>
+                    <div class="hot-btns">
+                        <button class="hot-btn active" data-value="حار">حار</button>
+                        <button class="hot-btn" data-value="بارد">بارد</button>
+                    </div>
+                    <button class="order-btn-card">اطلب الآن</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cards-h">
+            <BUtton>انقر لعرض المزيد</BUtton>
+        </div>
+    </div>
+
+
+
+    <h1 class="order-title" id="order-title">تعبئة الطلب</h1>
+
+    <div class="order-form-container">
+        <p class="order-sub">املأ النموذج لتعبئة طلبك</p>
+
+        <form id="orderForm">
+            <div class="row">
+                <div class="input-group">
+                    <label>رقم الهاتف</label>
+                    <input type="text" placeholder="أدخل رقم الهاتف" required>
+                </div>
+
+                <div class="input-group">
+                    <label>الاسم كامل</label>
+                    <input type="text" placeholder="أدخل اسمك كامل" required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>عنوان التوصيل</label>
+                <textarea rows="4" required></textarea>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label>الكمية</label>
+                    <input type="number" placeholder="عدد الوجبات" required>
+                </div>
+
+                <div class="input-group">
+                    <label>نوع الوجبة</label>
+                    <select id="mealSelect" required>
+                        <option selected disabled>اختر نوع الوجبة</option>
+                        <option>فروج مشوي كامل</option>
+                        <option>فروج بروستد</option>
+                        <option>وجبة عائلية</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label>طبق جانبي</label>
+                    <select required>
+                        <option>بطاطا مقلية</option>
+                        <option>بطاطا ودجز</option>
+                        <option>سلطة</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>مستوى البهارات</label>
+                    <select required>
+                        <option>عادي</option>
+                        <option>حار</option>
+                        <option>حار جداً</option>
+                    </select>
+                </div>
+            </div>
+            <input type="hidden" id="mealTypeInput" name="mealType">
+            <input type="hidden" id="heatLevelInput" name="heatLevel">
+
+            <button type="submit" class="order-btn">تأكيد الطلب</button>
+        </form>
+    </div>
+
+
+    <footer>
+        جميع الحقوق محفوظة © 2023 فروج القلعة
+    </footer>
+
+
+
+
+
+    <div id="popupOverlay" class="popup-overlay">
+        <div class="popup-box">
+            <span id="closePopup" class="close-btn">&times;</span>
+
+            <h2 class="popup-title">تعبئة الطلب</h2>
+
+            <form id="popupOrderForm">
+
+                <div class="input-group">
+                    <label>نوع الوجبة</label>
+                    <input type="text" id="popupMeal" readonly required>
+                </div>
+
+                <div class="input-group">
+                    <label>درجة الحرارة</label>
+                    <input type="text" id="popupHeat" readonly required> 
+                </div>
+
+                <div class="input-group">
+                    <label>رقم الهاتف</label>
+                    <input type="number" placeholder="أدخل رقم الهاتف" required>
+                </div>
+
+                <div class="input-group">
+                    <label>الاسم كامل</label>
+                    <input type="text" placeholder="أدخل اسمك" required>
+                </div>
+
+                <button class="order-btn">تأكيد الطلب</button>
+            </form>
+
+        </div>
+    </div>
+
+
+    <script src="scripts/navs.js"></script>
+    <script src="scripts/order.js"></script>
+</body>
+
+</html>

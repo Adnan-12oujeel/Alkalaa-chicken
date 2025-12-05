@@ -1,0 +1,166 @@
+.cards {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 30px;
+    padding-top: 100px;
+}
+
+.card {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    gap: 10px;
+    overflow: hidden;
+    box-shadow: orangered 0 0 20px;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.card-h {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+}
+
+.cards-h {
+    width: 100% !important;
+    text-align: center;
+}
+
+.cards-h h1 {
+    color: #fff;
+    padding: 25px;
+}
+
+.card-details {
+    color: #000;
+    margin: 10px;
+    width: 300px;
+}
+
+.cards-h button,
+.card button {
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 6px;
+    border: none;
+    background-color: orangered;
+    border-radius: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cards-h button:hover,
+.card button:hover {
+    background: #fff;
+    border: solid 2px orangered;
+    color: orangered;
+}
+
+.card img {
+    height: 250px;
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+.hot-btns {
+    display: flex;
+    width: 300px;
+}
+
+.hot-btns .hot-btn {
+    background-color: #ccc;
+}
+
+
+.hot-btns .hot-btn.active {
+    background-color: orangered;
+    color: white;
+    border: 2px solid #fff;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-box {
+    width: 350px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 14px;
+    position: relative;
+    animation: popupShow .3s ease;
+}
+
+@keyframes popupShow {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #555;
+}
+.close-btn:hover {
+    color: orangered;
+}
+
+.popup-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: orange;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.input-group select,
+.input-group input {
+    padding: 6px;
+    border: 1px solid orangered;
+    border-radius: 8px;
+}
+
+.popup-overlay .popup-box form .order-btn{
+    width: 100%;
+    background-color: orangered;
+    border: none;
+    padding: 8px;
+    color: #fff;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+.popup-overlay .popup-box form .order-btn:hover{
+    background-color: #ccc;
+    border: orangered 2px solid;
+}
